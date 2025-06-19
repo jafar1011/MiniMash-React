@@ -8,7 +8,7 @@ function App() {
     document.title = "Mini Mash - home";
   }, []);
   return (
-    <Router>
+    <Router basename="/MiniMash-React">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
