@@ -1,0 +1,80 @@
+.snake-game-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  width: 470px;
+  color: #17c43d;
+  font-family: 'Public Pixel', sans-serif;
+  font-size: 16px;
+  margin-top: 40px;
+  margin-left: 800px;
+}
+
+.snake-game-grid {
+  display: grid;
+  grid-template-rows: repeat(20, 16px);
+  grid-template-columns: repeat(20, 16px);
+  background-color: #222;
+  border: 3px solid #4caf50;
+  padding: 3px;
+  border-radius: 8px;
+
+  gap: 0px;
+  box-sizing: content-box;
+  transform: translateZ(0);
+}
+
+.snake-row {
+  display: contents;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.snake-cell {
+  width: 16px;
+  height: 16px;
+  background-color: #222;
+  position: relative;
+
+  box-sizing: border-box;
+  /* 👈 Important to match grid sizing */
+}
+
+.snake-head {
+  background-color: #2b852e;
+  position: relative;
+
+}
+
+.snake-body {
+  background-color: #66bb6a;
+}
+
+.food {
+  background-color: red;
+  border-radius: 50%;
+}
+
+.eye {
+  width: 3px;
+  height: 3px;
+  background: rgb(232, 248, 3);
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+}
+
+.eye-left {
+  left: 3px;
+}
+
+.eye-right {
+  right: 3px;
+}
